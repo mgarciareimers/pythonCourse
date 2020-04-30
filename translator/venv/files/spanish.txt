@@ -1,0 +1,5 @@
+Hola, ¿qué tal estás?
+Bien, ¿y tú?
+Yo bien, probando un traductor de Python.
+¡Ahh! Pues muy bien, ¿no?
+Claro, xD

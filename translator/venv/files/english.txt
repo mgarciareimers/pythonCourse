@@ -1,0 +1,5 @@
+Hi! How are you?
+Fine, and you?
+Me fine, testing a Python translator.
+Ahh! Very well, right?
+Sure, xD
