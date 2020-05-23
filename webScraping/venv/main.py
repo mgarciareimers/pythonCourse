@@ -60,5 +60,5 @@ while download:
 
 # Get the custom hacker news.
 custom_hacker_news = sort_stories_by_votes(custom_hacker_news)
-print('\n\n Custom news: \n')
+print(f'\n\n Custom news ({len(custom_hacker_news)}): \n')
 pprint.pp(f'{custom_hacker_news}')
