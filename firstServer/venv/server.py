@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 # Root route.
 @app.route('/')
-def hello_world():
+def index():
     return render_template('./index.html')  # Do not include the parent folder ('template'). Views need to be in templates folder.
 
 
@@ -17,3 +17,9 @@ def hello_world():
 @app.route('/about')
 def about():
     return render_template('./about.html')
+
+
+# Users route.
+@app.route('/users/<string:username>')  # Variable rules: To get values from the url, set <variable_name> (in this case, username). In this case type of field has been se tot string.
+def users(username=None):
+    return render_template('./users.html', name=username)  # It is possible to send variables to the template (in this case, the name of the variable inside the template is name).
