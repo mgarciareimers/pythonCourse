@@ -1,6 +1,5 @@
 from random import randint
 
-
 # Method that asks for the number
 def ask_for_number():
     random_number = randint(0, 10)
