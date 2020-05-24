@@ -13,7 +13,7 @@ def hello_world():
     return render_template('./index.html')  # Do not include the parent folder ('template'). Views need to be in templates folder.
 
 
-# Root route.
+# About route.
 @app.route('/about')
 def about():
     return render_template('./about.html')

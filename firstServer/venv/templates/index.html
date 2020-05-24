@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
+    <meta charset='UTF-8'>
     <title>First Server</title>
+
+    <!-- Styles need to be in the static folder. -->
+    <link rel='stylesheet' type='text/css' href='static/style.css'>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 <body>
     <p>Hello, this is the first server :)</p>
+
+    <script src='static/script.js'></script>
 </body>
 </html>
