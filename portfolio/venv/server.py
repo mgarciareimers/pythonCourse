@@ -27,11 +27,14 @@ def html_page(page_name):
 @app.route('/submit_form', methods=['POST', 'GET'])
 def submit_form():
     if request.method == 'POST':
-        data = request.form.to_dict()
+        try:
+            data = request.form.to_dict()
 
-        # write_to_txt_file(data)
-        write_to_csv_file(data)
+            # write_to_txt_file(data)
+            write_to_csv_file(data)
 
-        return render_template('thankyou.html', data=data)
+            return render_template('thankyou.html', data=data)
+        except:
+            return 'An error occurred while saving into database.'
     else:
         return 'Something went wrong!'
